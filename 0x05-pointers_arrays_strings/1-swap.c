@@ -3,7 +3,8 @@
 /**
  * swap_int - Takes a pointer and swaps its value with
  *               another pointer.
- * @a,b: The pointers to be swapped.
+ * @a: first pointer to be swapped.
+ * @b: second pointer to be swapped.
  */
 void swap_int(int *a, int *b)
 {
