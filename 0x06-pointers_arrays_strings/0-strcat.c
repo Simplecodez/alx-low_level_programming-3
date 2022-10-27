@@ -1,21 +1,30 @@
-#include <stdio.h>
-#include <string.h>
-
+#include "holberton.h"
 /**
- * _strcat - concatenates two string
- * @dest: first string is stored in this variable
- * @src: second string is stored in this variable
- * Return: returns null
+ *_strcat -  concatenates two strings
+ *@dest: A pointer to an char that will be updated
+ *@src: A pointer to an char that will be updated
+ *Return: dest
  */
+	
 char *_strcat(char *dest, char *src)
-{
-strcat(dest, src);
-printf("%s", dest);
-return dest;
+{	
+	int i, j;
+	
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		j++;  /*sum j*/
+		i++; /**sum i*/
+	}
+
+	dest[i] = '\0';
+
+	return (dest);
 }
-
-
-
-
-
-
