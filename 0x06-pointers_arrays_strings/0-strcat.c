@@ -10,8 +10,8 @@
 char *_strcat(char *dest, char *src)
 {
 strcat(dest, src);
-printf("%s", dest);
-return 0;
+//printf("%s", dest);
+return dest;
 }
 
 
